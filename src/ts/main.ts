@@ -1,6 +1,3 @@
-        // TypeScript code compiled to JavaScript
-        // This would typically be in a separate .ts file and compiled
-
         // Navigation menu toggle
         document.addEventListener('DOMContentLoaded', () => {
             // Burger menu functionality
