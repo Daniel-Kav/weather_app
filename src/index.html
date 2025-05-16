@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeScript Blog Explorer</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>TypeScript Blog Explorer</h1>
+            <p>A demo using JSONPlaceholder API with TypeScript classes</p>
+        </div>
+    </header>
+    
+    <main class="container">
+        <div class="app-wrapper">
+            <section class="sidebar">
+                <h2>Posts</h2>
+                <div class="loading-indicator" id="posts-loading">Loading posts...</div>
+                <div id="posts-list" class="posts-list"></div>
+            </section>
+            
+            <section class="content">
+                <div id="post-detail" class="post-detail">
+                    <div class="welcome-message">
+                        <h2>Welcome to the Blog Explorer</h2>
+                        <p>Select a post from the sidebar to view details</p>
+                    </div>
+                </div>
+                
+                <div id="comments-section" class="comments-section" style="display: none;">
+                    <h3>Comments</h3>
+                    <div class="loading-indicator" id="comments-loading" style="display: none;">Loading comments...</div>
+                    <div id="comments-list" class="comments-list"></div>
+                </div>
+
+                <div id="user-info" class="user-info" style="display: none;">
+                    <h3>Author</h3>
+                    <div class="loading-indicator" id="user-loading" style="display: none;">Loading user...</div>
+                    <div id="user-detail" class="user-detail"></div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Built with TypeScript, Vite and JSONPlaceholder API</p>
+        </div>
+    </footer>
+
+    <script type="module" src="./ts/main.ts"></script>
+</body>
+</html>
